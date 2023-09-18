@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* nav text stroke effect */
+.stroke_text {
+  font-size: 2em;
+  letter-spacing: 4px;
+  color: #d1d5db;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  transition: color 0.3s ease, -webkit-text-fill-color 0.3s ease,
+    -webkit-text-stroke-width 0.3s ease;
+}
+
+.stroke_text:hover {
+  font-size: 2em;
+  letter-spacing: 4px;
+  color: #e5e7eb;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0;
+}
+
+/* @media screen and (max-width: 768px) {
+  .stroke_text {
+    font-size: 1.2em;
+    letter-spacing: 6px;
+    color: #d1d5db;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.8px;
+    transition: color 0.3s ease, -webkit-text-fill-color 0.3s ease,
+      -webkit-text-stroke-width 0.3s ease;
+  }
+} */
+
+/* ellipse design */
+.ellipse1 {
+  width: 1152px;
+  height: 1152px;
+  flex-shrink: 0;
+  background: var(--red-500, rgba(239, 68, 68, 0.4));
+  filter: blur(200px);
+}
